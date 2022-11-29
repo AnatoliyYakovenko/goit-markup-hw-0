@@ -286,17 +286,14 @@ button {
   color: var(--white-elements);
   outline: transparent;
 }
-/* .social-items:hover .social-icon,
-.social-items:focus .social-icon{
-  background-color: var(--blue-elements);
-  fill: var(--white-elements);
-} */
 .clients-list {
   display: flex;
-
   gap: 30px;
 }
-.clients-link{
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #afb1b8;
 }
 .clients-icon {
@@ -306,18 +303,10 @@ button {
 }
 
 .clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon{
+.clients-link:focus .clients-icon {
   color: var(--blue-elements);
   border: 1px solid var(--blue-elements);
-  
 }
-/* .clients-icon:hover .clients.icon,
-.clients-link:focus .clients.icon {
-  fill: var(--blue-elements);
-  border: 1px solid var(--blue-elements);
-  cursor: pointer;
-} */
-/* Address */
 .footer {
   max-width: 1600px;
   margin-right: auto;
@@ -457,8 +446,9 @@ button {
   width: 370px;
 }
 .projects-link:hover,
-.projects-link:focus{
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.projects-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .projects-link {
   display: block;
@@ -469,7 +459,7 @@ button {
 }
 .projects-list_text {
   padding: 20px 24px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   border-top: none;
 }
 .projects-title {
