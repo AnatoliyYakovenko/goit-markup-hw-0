@@ -26,6 +26,7 @@ p,
 a {
   margin: 0;
   padding: 0;
+  border: none;
   text-decoration: none;
 }
 
@@ -41,6 +42,7 @@ img {
 button {
   margin: 0;
   padding: 0;
+  border: none;
 }
 .section {
   padding-top: 94px;
@@ -279,8 +281,10 @@ button {
 }
 .social-link:hover,
 .social-link:focus {
+  border-color: transparent;
   background-color: var(--blue-elements);
   color: var(--white-elements);
+  outline: transparent;
 }
 /* .social-items:hover .social-icon,
 .social-items:focus .social-icon{
@@ -292,20 +296,32 @@ button {
 
   gap: 30px;
 }
+.clients-link{
+  color: #afb1b8;
+}
 .clients-icon {
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
-.clients-icon:hover,
-.clients-icon:focus {
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon{
+  color: var(--blue-elements);
+  border: 1px solid var(--blue-elements);
+  
+}
+/* .clients-icon:hover .clients.icon,
+.clients-link:focus .clients.icon {
   fill: var(--blue-elements);
   border: 1px solid var(--blue-elements);
   cursor: pointer;
-}
-
+} */
 /* Address */
 .footer {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 60px 0;
   background-color: var(--secondary-background);
 }
@@ -371,6 +387,7 @@ button {
 .join-link:hover,
 .join-link:focus {
   background-color: var(--blue-elements);
+  outline: transparent;
 }
 /* Buttons */
 .button {
@@ -419,11 +436,12 @@ button {
 }
 
 .buttons-list .button.secondary:hover,
-.buttons-list .button.secondary:hover {
+.buttons-list .button.secondary:focus {
   color: var(--white-elements);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   background-color: var(--blue-elements);
+  outline: transparent;
 }
 
 /* PORTFOLIO */
